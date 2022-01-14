@@ -92,7 +92,18 @@ const Page = (props) => {
   } = props;
 
   const formRef = useRef();
+  const resize = () => {
+    const setRem = () => {
+      const scale = document.documentElement.clientWidth / 1920
+      document.documentElement.style.zoom = scale;
+    }
+    setRem();
+    window.onresize = () => {
+      setRem();
+    };
+  }
   const init = () => {
+    resize()
     container = document.getElementById("login-three-container");
     width = container.clientWidth;
     height = container.clientHeight;
