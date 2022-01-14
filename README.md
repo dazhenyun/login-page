@@ -34,13 +34,13 @@ export default () => {
     return res
   }
 
-  const loginPage = {
-    platformName: '大数据平台'
+  const loginProps = {
+    platformName: '大数据平台',
     reqCode,
     loginSubmit
   }
 
-  return <LoginPage {...loginPage} />;
+  return <LoginPage {...loginProps} />;
 };
 
 ```
