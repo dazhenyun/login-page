@@ -103,7 +103,7 @@ const Page = (props) => {
     };
   }
   const init = () => {
-    resize()
+    // resize()
     container = document.getElementById("login-three-container");
     width = container.clientWidth;
     height = container.clientHeight;
