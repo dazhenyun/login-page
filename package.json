@@ -15,7 +15,11 @@
     "build": "webpack --env.NODE_ENV=production",
     "dev": "webpack-dev-server --inline --progress --config webpack.config.js"
   },
-  "author": "zhutf@dazhenyun.cn",
+  "author": "Eric",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dazhenyun/login-page.git"
+  },
   "license": "MIT",
   "dependencies": {
     "@ant-design/icons": "^4.0.0",
